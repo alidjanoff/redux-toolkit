@@ -1,11 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// Styles
+
+// style
 import "./assets/scss/index.scss";
-// Compontns
-import App from "./App";
-// Router
+
+// router
 import { BrowserRouter } from "react-router-dom";
+
+// main-component
+import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

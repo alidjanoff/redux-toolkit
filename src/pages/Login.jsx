@@ -1,10 +1,20 @@
 import { useState } from "react";
-import { FaFacebookF, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
+
+// router
 import { Link } from "react-router-dom";
 
+// react-icons
+import { FaFacebookF, FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
+
+// components
+import Input from "../components/Input";
+import Button from "../components/Button";
+
 const Login = () => {
+  // states
   const [rightPanel, setRightPanel] = useState(false);
 
+  // change form tabs
   const changeForm = (e) => {
     e.preventDefault();
     setRightPanel(!rightPanel);
@@ -31,10 +41,10 @@ const Login = () => {
                   </Link>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
-                <button>Register</button>
+                <Input type="text" placeholder="Name" />
+                <Input type="email" placeholder="Email" />
+                <Input type="password" placeholder="Password" />
+                <Button>Register</Button>
               </form>
             </div>
             <div className="form-container sign-in-container">
@@ -52,10 +62,10 @@ const Login = () => {
                   </Link>
                 </div>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <Input type="email" placeholder="Email" />
+                <Input type="password" placeholder="Password" />
                 <Link to="#">Forgot your password?</Link>
-                <button>Log In</button>
+                <Button>Log In</Button>
               </form>
             </div>
             <div className="overlay-container">
@@ -66,16 +76,16 @@ const Login = () => {
                     To keep connected with us please login with your personal
                     info
                   </p>
-                  <button className="ghost" id="signIn" onClick={changeForm}>
+                  <Button className="ghost" id="signIn" onClick={changeForm}>
                     Log In
-                  </button>
+                  </Button>
                 </div>
                 <div className="overlay-panel overlay-right">
                   <h3>Hello, Friend!</h3>
                   <p>Enter your personal details and start journey with us</p>
-                  <button className="ghost" id="signUp" onClick={changeForm}>
+                  <Button className="ghost" id="signUp" onClick={changeForm}>
                     Register
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>

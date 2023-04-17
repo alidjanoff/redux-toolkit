@@ -1,3 +1,4 @@
+// react-icons
 import { FaStar } from "react-icons/fa";
 
 const FavoriteCard = () => {

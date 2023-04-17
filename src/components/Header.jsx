@@ -1,12 +1,17 @@
 import { useState, useRef, useEffect } from "react";
+
+// router
 import { Link, NavLink } from "react-router-dom";
+
+// react-icons
 import { FaUser, FaShoppingBag, FaRegTrashAlt, FaStar } from "react-icons/fa";
 
 const Header = () => {
+  // states
   const [isOpen, setIsOpen] = useState(false);
   const [cartIsOpen, setCartIsOpen] = useState(false);
 
-  // Outside click
+  // detect outside click
   const ref = useRef(null);
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
@@ -19,7 +24,6 @@ const Header = () => {
       setCartIsOpen(false);
     }
   };
-  // Outside click
 
   return (
     <header className="header">

@@ -1,3 +1,4 @@
+// components
 import FavoriteCard from "../components/FavoriteCard";
 
 const Favorites = () => {

@@ -1,4 +1,9 @@
+// react-icons
 import { FaRegTrashAlt } from "react-icons/fa";
+
+// components
+import Input from "./Input";
+import Button from "./Button";
 
 const CartCard = () => {
   return (
@@ -14,9 +19,9 @@ const CartCard = () => {
         <p className="itemInfo">Info</p>
         <span className="itemPrice">Price: 999 $</span>
         <div className="itemCounter">
-          <button className="counterBtn">+</button>
-          <input type="number" className="itemQuantity" value="1" />
-          <button className="counterBtn">-</button>
+          <Button className="counterBtn">+</Button>
+          <Input type="number" className="itemQuantity" value="1" />
+          <Button className="counterBtn">-</Button>
         </div>
         <FaRegTrashAlt className="trashIcon" />
       </div>
