@@ -1,0 +1,56 @@
+@import "../mixins";
+
+.productDetails {
+  width: 100%;
+  background-image: url(https://wallpaperaccess.com/full/221429.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    .row {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      color: #fff;
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .detailsBox {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 25px;
+        padding: 20px;
+        gap: 50px;
+        .leftSide {
+          width: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .rightSide {
+          width: 60%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 30px;
+          h2 {
+            text-align: center;
+          }
+          .productPrice {
+            text-align: right;
+          }
+          .btn {
+            @include primaryBtn();
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
