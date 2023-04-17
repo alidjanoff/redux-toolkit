@@ -1,0 +1,18 @@
+.home {
+  width: 100%;
+  background-image: url(https://moderntouchdds.com/wp-content/uploads/revslider/dentalia-2/dentalia-demo-bg-3-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    .row {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+}

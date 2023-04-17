@@ -1,0 +1,13 @@
+// Global styles
+@import "./base";
+
+// Components
+@import "./components/header";
+@import "./components/card";
+@import "./components/cardItem";
+
+// Pages
+@import "./pages/home";
+@import "./pages/shop";
+@import "./pages/cart";
+@import "./pages/login";
