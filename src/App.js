@@ -1,8 +1,10 @@
-// Router
+// router
 import { Routes, Route } from "react-router-dom";
-// Components
+
+// components
 import Header from "./components/Header";
-// Pages
+
+// pages
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import Cart from "./pages/Cart";

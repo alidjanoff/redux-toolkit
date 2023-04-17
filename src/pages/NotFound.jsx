@@ -1,7 +1,13 @@
+// router
 import { useNavigate } from "react-router-dom";
 
+// Components
+import Button from "../components/Button";
+
 const NotFound = () => {
+  // router
   const navigate = useNavigate();
+  
   return (
     <section className="notFound">
       <div className="container">
@@ -22,7 +28,7 @@ const NotFound = () => {
               </div>
             </div>
             <h2 className="errorTitle">Sorry! Page not found</h2>
-            <button onClick={() => navigate(-1)}>Go Back</button>
+            <Button onClick={() => navigate(-1)}>Go Back</Button>
           </div>
         </div>
       </div>

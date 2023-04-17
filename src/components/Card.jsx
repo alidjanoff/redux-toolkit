@@ -1,5 +1,12 @@
-import { FaRegStar, FaStar } from "react-icons/fa";
+// router
 import { Link } from "react-router-dom";
+
+// react-icons
+import { FaRegStar, FaStar } from "react-icons/fa";
+
+// components
+import Input from "./Input";
+import Button from "./Button";
 
 const Card = () => {
   return (
@@ -28,11 +35,11 @@ const Card = () => {
         <div className="con-price">129.99 $</div>
       </Link>
       <div className="con-btn">
-        <button className="add">Add to cart</button>
+        <Button className="add">Add to cart</Button>
         <div className="con-input-btns">
-          <button className="less">-</button>
-          <input value="1" type="number" />
-          <button className="plus">+</button>
+          <Button className="less">-</Button>
+          <Input value="1" type="number" />
+          <Button className="plus">+</Button>
         </div>
       </div>
     </div>

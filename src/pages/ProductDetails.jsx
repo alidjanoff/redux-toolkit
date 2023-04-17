@@ -1,3 +1,6 @@
+// components
+import Button from "../components/Button";
+
 const ProductDetails = () => {
   return (
     <section className="productDetails">
@@ -15,7 +18,7 @@ const ProductDetails = () => {
               <h2 className="productTitle">Title</h2>
               <p className="productInfo">Info</p>
               <p className="productPrice">Price: 0 $</p>
-              <button className="btn">Add to Cart</button>
+              <Button className="btn">Add to Cart</Button>
             </div>
           </div>
         </div>

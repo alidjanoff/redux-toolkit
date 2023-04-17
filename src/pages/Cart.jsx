@@ -1,3 +1,4 @@
+// components
 import CartCard from "../components/CartCard";
 
 const Cart = () => {
